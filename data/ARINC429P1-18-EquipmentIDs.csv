@@ -1,0 +1,423 @@
+"Equip ID(Hex)","Equipment Type"
+"0","Not Used"
+"1","Flight Control Computer (701)"
+"2","Flight Management Computer (702)"
+"3","Thrust Control Computer (703)"
+"4","Inertial Reference System (704)"
+"5","Attitude and Heading Ref. System (705)"
+"6","Air Data System (706)"
+"7","Radio Altimeter (707)"
+"8","Airborne Weather Radar (708)"
+"9","Airborne DME (709)"
+"00A","FAC (A310)"
+"00B","Global Positioning System (743)"
+"00C",
+"00D","AIDS Data Management Unit"
+"00E",
+"00F",
+"10","Airborne ILS Receiver (710)"
+"11","Airborne VOR Receiver (711)"
+"12","Airborne ADF System (712)"
+"13",
+"14",
+"15",
+"16","Airborne VHF COM (716)"
+"17","DEFDARS-AIDS (717)"
+"18","ATC Transponder (718)"
+"19","Airborne HF/SSB System (719)"
+"01A","Electronic Supervisory Control                         [1]"
+"01B","Digital Slat/Flap Computer (A310)"
+"01C","Engine Parameter Digitizer (Engine)"
+"01D","A/P & F/D Mode Control Panel (757/767)"
+"01E","Performance Data Computer (Boeing 737)"
+"01F","Fuel Quantity Totalizer"
+"20","DFS System (720)"
+"21",
+"22",
+"23","Ground Prox. Warning System (723)"
+"24","ACARS (724) / CMU Mark 2 (758)"
+"25","Electronic Flt. Instruments (725)"
+"26","Flight Warning Computer (726)"
+"27","Microwave Landing System (727)"
+"28",
+"29","ADDCS (729) and EICAS"
+"02A","Thrust Management Computer"
+"02B","Perf. Nav. Computer System (Boeing 737)"
+"02C","Digital Fuel Gauging System (A310)"
+"02D","EPR Indicator (Boeing 757)"
+"02E","Land Rollout CU/Landing C & LU"
+"02F","Full Authority EEC-A"
+"30","Airborne Separation Assurance System"
+"31","Chronometer (731)"
+"32","Pass. Entertainment Tape Reproducer (732)"
+"33","Propulsion Multiplexer (PMUX)(733)"
+"34","Fault Isolation & Detection System (734)"
+"35","TCAS (735)"
+"36","Radio Management System (736)"
+"37","Weight and Balance System (737)"
+"38","ADIRS (738)"
+"39","MCDU (739)"
+"03A","Propulsion Discrete Interface Unit"
+"03B","Autopilot Buffer Unit"
+"03C","Tire Pressure Monitoring System"
+"03D","Airborne Vibration Monitor (737/757/767)"
+"03E","Center of Gravity Control Computer"
+"03F","Full Authority EEC-B"
+"40","Cockpit Printer (740)"
+"41","Satellite Data Unit"
+"42",
+"43",
+"44",
+"45",
+"46","CTU"
+"47","Digital Flight Data Recorder"
+"48",
+"49",
+"04A","Landing Gear Position Interface Unit"
+"04B","Main Electrical System Controller"
+"04C","Emergency Electrical System Controller"
+"04D","Fuel Qty. Indicating System (757/767)"
+"04E","Fuel Qty. Indicating System (747)"
+"04F",
+"50","VDR (750)"
+"51",
+"52",
+"53","HF Data Unit"
+"54",
+"55","Multi-Mode Receiver (MMR) (755)"
+"56","GNSS Navigation Landing Unit (GNLU)(756)"
+"57","Cockpit Voice Recorder (CVR) (757)"
+"58",
+"59",
+"05A","Fuel Quan. Indicating System (A320/A321)"
+"05B","Cargo Smoke Detection Unit (A320)"
+"05C","Cabin Pressure Unit (A320)"
+"05D","Zone Controller (A320)"
+"05E","Cargo Heat (A320)"
+"05F","CIDS (A320)"
+"60","GNSS Navigation Unit (GNU) (760)"
+"61","High-Speed Data Unit (HSDU)"
+"62",
+"63",
+"64",
+"65",
+"66",
+"67",
+"68",
+"69",
+"06A","AMU (A320)"
+"06B","Battery Charge Limiter (A320)"
+"06C","Flt. Cont. Data Concentrator (A320)"
+"06D","Landing Gear Prox. Control (A320)"
+"06E","Brake Steering Unit (A320)"
+"06F","Bleed Air (A320)"
+"70",
+"71",
+"72",
+"73",
+"74",
+"75",
+"76",
+"77",
+"79",
+"07A","APU Engine Control Unit (A320)"
+"07B","Engine Interface Unit (A320)"
+"07C","FADEC Channel A (A320)"
+"07D","FADEC Channel B (A320)"
+"07E","Centralized Fault Data Interface Unit"
+"07F","Fire Detection Unit (A320)"
+"80",
+"81",
+"82",
+"83",
+"84",
+"85",
+"86",
+"87",
+"88",
+"89",
+"08A","Window Heat Computer (A320)"
+"08B","Probes Heat Computer (A320)"
+"08C","Avionics Cooling Computer (A320)"
+"08D","Fuel Flow Indicator (B747)"
+"08E","Surface Position Digitizer (B747-400)"
+"08F","Vacuum System Controller"
+"90",
+"91",
+"93",
+"94",
+"95",
+"96",
+"97",
+"98",
+"99",
+"09A",
+"09B",
+"09C",
+"09D",
+"09E",
+"09F",
+"0A0",
+"0A1","FCC Controller (701)"
+"0A2","FMC Controller (702)"
+"0A3","Thrust Rating Controller (703)"
+"0A4","IRS Controller (704)"
+"0A5",
+"0A6",
+"0A7",
+"0A8","Airborne WXR Controller (708)"
+"0A9","Airborne DME Controller (709)"
+"0AA","Generator Control Unit (A320)"
+"0AB","Air Supply Control & Test Unit (B747-400)"
+"0AC","Bus Control Unit (B747-400)"
+"0AD","ADIRS Air Data Module"
+"0AE","Yaw Damper Module (B747-400)"
+"0AF","Stabilizer Trim Module (B747-400)"
+"0B0","Airborne ILS Controller (710)"
+"0B1","Airborne VOR Controller (711)"
+"0B2","Airborne ADF Controller (712)"
+"0B3",
+"0B4",
+"0B5",
+"0B6","VHF COM Controller (716)"
+"0B7",
+"0B8","ATC Transponder Controller (718)"
+"0B9","HF/SSB System Controller (719)"
+"0BA","Power Supply Module (B747-400)"
+"0BB","Flap Control Unit (B747-400)"
+,"Flap Slat Electronics Unit (B767-400)"
+"0BC","Fuel System Interface Card (B747-400)"
+"0BD","Hydraulic Quantity Monitor Unit (B747-400)"
+"0BE","Hydraulic Interface Module (B747-400)"
+"0BF","Window Heat Control Unit (B747-400)"
+"0C0",
+"0C1",
+"0C2","PVS Control Unit"
+"0C3","GPWS Controller (723)"
+"0C4","A429W SDU Controller"
+"0C5","EFI Controller (725)"
+"0C6",
+"0C7","MLS Controller (727)"
+"0C8",
+"0C9",
+"0CA","Brake Temperature Monitor Unit (B747-400)"
+"0CB","Autostart (B747-400)"
+"0CC","Brake System Control Unit (B747-400)"
+"0CD","Pack Temperature Controller (B747-400)"
+"0CE","EICAS/EFIC Interface Unit (B747-400)"
+"0CF","Para Visual Display Computer (B747-400)"
+"0D0","Engine Instrument System (B737)"
+"0D1",
+"0D2",
+"0D3","Thermal Monitoring Unit (General)"
+"0D4",
+"0D5","TCAS Control Panel"
+"0D6",
+"0D7",
+"0D8",
+"0D9",
+"0DA","Prox. Switch Electronics Unit (B747-400)"
+"0DB","APU Controller (B747-400)"
+"0DC","Zone Temperature Controller (B747-400)"
+"0DD","Cabin Pressure Controller (B747-400)"
+"0DE","Windshear Computer (Sperry)"
+"0DF","Equipment Cooling Card (B747-400)"
+"0E0","Crew Rest Temp. Controller (B747-400)"
+"0E1",
+"0E2",
+"0E3",
+"0E4",
+"0E5",
+"0E6",
+"0E7",
+"0E8",
+"0E9",
+"0EA","Misc. Environment Control (B747)"
+"0EB","Fuel Jettison Control Card (B747)"
+"0EC","Advance Cabin Entertainment Serv. Sys."
+"0ED","Fuel System Controller (MD-11)"
+"0EE","Hydraulic System Controller (MD-11)"
+"0EF","Environmental System Controller (MD-11)"
+"0F0",
+"0F1",
+"0F2",
+"0F3",
+"0F4",
+"0F5",
+"0F6",
+"0F7",
+"0F8",
+"0F9",
+"0FA","Misc. System controller (MD-11)"
+"0FB","Anti-Skid System (MD-11)"
+"0FC","Cabin Pressure Control Sys. (MD-11)"
+"0FD","Air Condition Control System (MD-11)"
+"0FE","Pneumatic Control System (MD-11)"
+"0FF","Manifold Failure Detection System (MD-11)"
+"100",
+"101",
+"102",
+"103",
+"104",
+"105",
+"106",
+"107",
+"108","Electronic Engine Control (EEC) Channel A (B737-700)"
+"109","Elect Eng Control (EEC) Channel B (B737-700)"
+"10A","Full Authority Engine Control A (GE)"
+"10B","Full Authority Engine Control B (GE)"
+"10C","APU Controller"
+"10D","Data Loader"
+"10E","Fire Detection Unit (MD-11)"
+"10F","Auto Brake Unit (MD-11)"
+"110","Multiplexer PES (A-320)"
+"111",
+"112","TACAN Adapter Unit (TAU)"
+"113","Stall Warning Card (B747-400)"
+"114","Fuel Unit Management System (A330/A340)"
+"115","TACAN"
+"116","Eng Interface Vibration Monitoring Unit (A330/A340)"
+"117","Engine Control Unit Channel A (A330/A340) "
+"118","Engine Control Unit Channel B (A330/A340)"
+"119","Centralized Maintenance Computer (A330/A340)"
+"11A","Multi-Disk Drive Unit (A330/A340)"
+"11B",
+"11C",
+"11D",
+"11E","Integrated Static Probe"
+"11F",
+"120","Multifunction Air Data Probe"
+"121",
+"122","Ground Auxiliary Power Unit (A320/319/321)"
+"123","Ground Power Control Unit (A330/A340)"
+"124","Fuel Management Computer (A330/A340)"
+"125","Center of Gravity Fuel Control Comp.(A330/A340)"
+"126","Circuit breakers Monitoring Unit (A330/A340)"
+"127","Electrical Contractor Management Unit (A330/A340)"
+"128","Hydraulic Electrical Generator Control Unit (A330/A340)"
+"129","Hydraulic System Monitoring Unit (A330/A340)"
+"12A","Cargo Bay Conditioning Card (B747)"
+"12B","Predictive Windshear System Sensor"
+"12C","Angle of Attack Sensor"
+"12D","Logic Drive Control Computer (B747/B767)"
+"12E","Cargo Control Logic Unit (B767)"
+"12F","Cargo Electronics Interface Unit (B767)"
+"130","Load Management Unit (LMU) Airbus"
+"131",
+"132",
+"133",
+"134",
+"135",
+"136","Audio Management System"
+"137",
+"138",
+"139",
+"13A","Full Authority Engine Control (P&W)"
+"13B","Audio Entertainment System (AES) Controller (Boeing)"
+"13C","Boarding Music Machine (B777)"
+"13D","Passenger In Flight Info Unit (Airshow)"
+"13E","Video Interface Unit (B777)"
+"13F","Camera Interface Unit (A340/B777)"
+"140","Supersonic Air Data Computer"
+"141","Satellite RF Unit"
+"142","ADS-B Link Display Processor Unit (LPDU)"
+"143","Vertical/Horizontal Gyro"
+"144","CDTI Display Unit"
+"145",
+"146",
+"147",
+"148",
+"149",
+"14A","Slide Slip Angle (SSA)"
+"14B",
+"14C",
+"14D",
+"14E",
+"14F",
+"150","AIMS Gen. Pur. Bus #1 (B777)"
+"151","AIMS Gen. Pur. Bus #2 (B777)"
+"152","AIMS Digital Comm. Mgmt. (B777)"
+"153","AIMS Gen. Pur. Bus #3 (B777)"
+"154","Central Maintenance Computer (B-777)"
+"155","AIMS EFIS Control Panel (B777)"
+"156","AIMS Display Unit (B777)"
+"157","AIMS Cursor Control Device (B777)"
+"158","AIMS General Purpose Bus #4"
+"159",
+"15A","Flight Data Interface Unit (A330/A340)"
+"15B","Flight Control Unit (A330/A340)"
+"15C","Flight Control Primary Computer (A330/A340)"
+"15D","Flight Control Secondary Computer (A330/A340)"
+"15E","Flight Mgmt Guidance Env Comp (A330/A340)"
+"15F",
+"160","Special Fuel Quan. Sys. (Boeing)"
+"161",
+"162",
+"163",
+"164",
+"165",
+"166",
+"167","Air Traffic Service Unit (Airbus)"
+"168","Integ Standby Instr System (A340/330,A320/319/321)"
+"169","Data Link Control and Display Unit (A340/330)"
+"16A","Display Unit (A330/A340)"
+"16B","Display Management Computer (A330/A340)"
+"16C","Head-Up Display Computer (A330/A340)"
+"16D","ECAM Control Panel (A330/A340)"
+"16E","Clock (A330/A340)"
+"16F","Cabin Interphone System (B777)"
+"170","Radio Tuning Panel (B777)"
+"171","Electronic Flight Bag"
+"172",
+"173",
+"174",
+"175",
+"176",
+"177",
+"178",
+"179",
+"17A","Cabin Ventilation Controller (A330/A340)"
+"17B","Smoke Detection Control Unit (A330/A340)"
+"17C","Proximity Sensor Control Unit (A330/A340)"
+"17D",
+"17E",
+"17F",
+"180",
+"181",
+"182",
+"183",
+"184",
+"185",
+"186",
+"187",
+"188",
+"189",
+"18A","Audio Control Panel (A330/A340)"
+"18B","Cockpit Voice recorder (A330/A340)"
+"18C","Passenger Entertainment Sys Main MUX (A330/A340)"
+"18D","Passenger Entertainment Sys Audio Repro.(A330/A340)"
+"18E","Pre-recorded Announcement Music Repro (A330/A340)"
+"18F","Video Control Unit (A330/A340)"
+"19F","Cade Environment System"
+"1E2","ADS-B LDPU Controller"
+"200","Versatile Integrated Avionics Unit (B717/MD-10)"
+"201","Electronic Spoiler Control Unit (B717)"
+"202","Brake Control Unit (B717)"
+"203","Pneumatic Overheat Detection Unit (B717)"
+"204","Proximity Switch Electronics Unit (B717)"
+"205","APU Electronic Control Unit (B717)"
+"206","Aircraft Interface Unit (MD-10)"
+"207","Fuel Quantity Gauging Unit (MD-10)"
+,
+,
+,
+,
+,
+"241","High Power Amplifier"
+,
+,
+,
+,
+,
+,
+"341","Satellite ACU"

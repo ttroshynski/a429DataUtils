@@ -1,0 +1,314 @@
+"Label","Eqpt ID(Hex)","Parameter Name","Units","Range(Scale)","Sig Bits","Pos Sense","Resolution","Min Transit Interval(msec) 2","Max Transit Interval(msec) 2","Max Trans-port Delay(msec) 3","Notes & Cross Ref. to Tables and Attachments"
+,,,,,,,,,,,
+"0 0 1","0 0 2","Distance to Go                  ","N.M.    ","?3999.9      ",5,,0.1,100,200,,06/25/13
+,"0 5 6","Distance to Go                  ","N.M.    ","?3999.9      ",5,,0.1,100,200,,
+,"0 6 0","Distance to Go                  ","N.M.    ","?3999.9      ",5,,0.1,100,200,,
+,,,,,,,,,,,
+"0 0 2","0 0 2","Time to Go                      ","Min     ","0-399.9       ",4,,0.1,100,200,,06/25/13
+,"0 5 6","Time to Go                      ","Min     ","0-399.9       ",4,,0.1,100,200,,
+,"0 6 0","Time to Go                      ","Min     ","0-399.9       ",4,,0.1,100,200,,
+,"1 1 5","Time to Station                 ","Min     ","0-399.9       ",4,,0.1,50,50,,"                  "
+,,,,,,,,,,,
+"0 0 3","0 0 2","Cross Track Distance            ","N.M.    ","0-399.9       ",4,,0.1,100,200,,06/25/13
+,,,,,,,,,,,
+"0 0 4","0 0 1","Runway Distance to Go           ","Feet    ","0-79900       ",3,,100,100,200,,"                  "
+,,,,,,,,,,,
+"0 1 0","0 0 2","Present Position - Latitude     ","Deg:Min ","180N-180S",6,"N",0.1,250,500,,"Section 2.1.2"
+,"0 0 4","Present Position - Latitude     ","Deg:Min ","180N-180S",6,"N",0.1,250,500,,"Section 2.1.2"
+,"0 3 8","Present Position - Latitude     ","Deg:Min ","180N-180S     ",6,"N",0.1,250,500,,"                  "
+,,,,,,,,,,,
+"0 1 1","0 0 2","Present Position - Longitude    ","Deg:Min ","180E-180W     ",6,"E",0.1,250,500,,"                  "
+,"0 0 4","Present Position - Longitude    ","Deg:Min ","180E-180W     ",6,"E",0.1,250,500,,"                  "
+,"0 3 8","Present Position - Longitude    ","Deg:Min ","180E-180W     ",6,"E",0.1,250,500,,"                  "
+,,,,,,,,,,,
+"0 1 2","0 0 2","Ground Speed                    ","Knots   ","0-7000        ",4,,1,250,500,,06/25/13
+,"0 0 4","Ground Speed                    ","Knots   ","0-7000        ",4,,1,250,500,,"                  "
+,"0 4 D","Qty-LD SEL (LB)","Lbs.","0-79999",5,,1,,,,
+,"0 0 5","Ground Speed                    ","Knots   ","0-7000        ",4,,1,250,500,,"                  "
+,"0 2 5","Ground Speed                    ","Knots   ","0-7000        ",4,,1,125,250,,"                  "
+,"0 3 8","Ground Speed                    ","Knots   ","0-7000        ",4,,1,250,500,,"                  "
+,"0 5 6","Ground Speed                    ","Knots   ","0-7000        ",4,,1,250,500,,
+,"0 6 0","Ground Speed                    ","Knots   ","0-7000        ",4,,1,250,500,,
+,,,,,,,,,,,
+"0 1 3","0 0 2","Track Angle - True              ","Deg     ","0-359.9       ",4,,0.1,250,500,,06/25/13
+,"0 0 4","Track Angle - True              ","Deg     ","0-359.9       ",4,,0.1,250,500,,"                  "
+,"0 4 D","Qty-Flt. Deck (LB)","Lbs.","0-79999",5,,1,,,,
+,"0 3 8","Track Angle - True              ","Deg     ","0-359.9       ",4,,0.1,250,500,,"                  "
+,,,,,,,,,,,
+"0 1 4","0 0 4","Magnetic Heading                ","Deg     ","0-359.9       ",4,,0.1,250,500,,"                  "
+,"0 0 5","Magnetic Heading                ","Deg","0-359.9       ",4,,0.1,250,500,,"                  "
+,"0 3 8","Magnetic Heading                ","Deg     ","0-359.9       ",4,,0.1,250,500,,"                  "
+,,,,,,,,,,,
+"0 1 5","0 0 2","Wind Speed                      ","Knots   ","0-799         ",3,,1,250,500,,"                  "
+,"0 0 4","Wind Speed                      ","Knots   ","0-799         ",3,,1,250,500,,"                  "
+,"0 0 5","Wind Speed                      ","Knots   ","0-799         ",3,,1,250,500,,"                  "
+,"0 3 8","Wind Speed                      ","Knots   ","0-799         ",3,,1,250,500,,"                  "
+,,,,,,,,,,,
+"0 1 6","0 0 4","Wind Direction - True           ","Deg     ","0-359         ",3,,1,250,500,,"                  "
+,"0 3 8","Wind Direction - True           ","Deg     ","0-359         ",3,,1,250,500,,"                  "
+,,,,,,,,,,,
+"0 1 7","0 1 0","Selected Runway Heading         ","Deg     ","0-359.9       ",4,,0.1,167,333,,"                  "
+,"0 4 D","Total-Flt. Deck (LB)","Lbs.","0-79999",5,,1,,,,
+,"0 5 5","Selected Runway Heading","Deg","0-359.9",4,,0.1,,,,
+,"0 A 0","Selected Runway Heading         ","Deg     ","0-359.9       ",4,,0.1,167,333,,"                  "
+,"0 B 0","Selected Runway Heading         ","Deg     ","0-359.9       ",4,,0.1,167,333,,"                  "
+,,,,,,,,,,,
+"0 2 0","0 2 0","Selected Vertical Speed         ","Ft/Min    ","?6000              ",4,,1,100,200,,06/25/13
+,"0 4 D","Tnk-LD SEL (LB)","Lbs.","0-79999",5,,1,,,,
+,"0 A 1","Selected Vertical Speed         ","Ft/Min  ","?6000        ",4,"Up",1,100,200,,"                  "
+,,,,,,,,,,,
+"0 2 1","0 0 2","Selected EPR                    ","EPR       ","0-3           ",4,,0.001,100,200,,"                  "
+,"0 0 2","Selected N1                     ","RPM     ","0-3000        ",4,,1,100,200,,"                  "
+,"0 2 0","Selected EPR                    ","EPR      ","0-3           ",4,,0.001,100,200,,"                  "
+,"0 2 0","Selected N1                     ","RPM     ","0-3000        ",4,,1,100,200,,"                  "
+,"0 A 1","Selected EPR                    ","EPR","0-3           ",3,,0.001,100,200,,"                  "
+,"0 A 1","Selected N1                     ","RPM     ","0-3000        ",4,,1,100,200,,"                  "
+,,,,,,,,,,,
+"0 2 2","0 2 0","Selected Mach                   ","Mach    ","0-4           ",4,,0.001,100,200,,"                  "
+,"0 4 D","Qty-LD SEL (KG)","Kg","0-79999",5,,1,,,,
+,"0 A 1","Selected Mach                   ","Mach    ","0-4           ",4,,0.001,100,200,,"                  "
+,,,,,,,,,,,
+"0 2 3","0 2 0","Selected Heading                ","Deg     ","0-359         ",3,,1,100,200,,06/25/13
+,"0 4 D","Qty-Flt Deck (KG)","Kg","0-79999",5,,1,,,,
+,"0 A 1","Selected Heading                ","Deg     ","0-359         ",3,,1,100,200,,"                  "
+,,,,,,,,,,,
+"0 2 4","0 1 1","Selected Course #1              ","Deg     ","0-359         ",3,,1,167,333,,06/25/13
+,"0 2 0","Selected Course #1              ","Deg     ","0-359         ",3,,1,167,333,,"                  "
+,"0 A 1","Selected Course #1              ","Deg     ","0-359         ",3,,1,167,333,,"                  "
+,"0 B 1","Selected Course #1              ","Deg     ","0-359         ",3,,1,167,333,,"                  "
+,,,,,,,,,,,
+"0 2 5","0 2 0","Selected Altitude               ","Feet    ","0-50000",5,,1,100,200,,06/25/13
+,"0 A 1","Selected Altitude               ","Feet    ","0-50000",5,,1,100,200,,"          "
+,,,,,,,,,,,
+"0 2 6","0 0 3","Selected Airspeed               ","Knots   ","30-450        ",3,,1,100,200,,06/25/13
+,"0 2 0","Selected Airspeed               ","Knots   ","30-450        ",3,,1,100,200,,"                  "
+,"0 A 1","Selected Airspeed               ","Knots   ","30-450        ",3,,1,100,200,,"                  "
+,,,,,,,,,,,
+"0 2 7","0 0 2","TACAN Selected Course","Deg","0-359",3,,1,167,333,,
+,"0 1 1","Selected Course #2              ","Deg     ","0-359         ",3,,1,167,333,,"                  "
+,"0 2 0","Selected Course #2              ","Deg     ","0-359         ",3,,1,167,333,,"                  "
+,"0 4 D","Total-Flt Deck (KG)","Kg","0-79999",5,,1,,,,
+,"0 5 6","TACAN Selected Course","Deg","0-359",3,,1,167,333,,
+,"0 6 0","TACAN Selected Course (BCD)","Deg","0-359",3,,1,167,333,,
+,"0 A 1","Selected Course #2              ","Deg     ","0-359         ",3,,1,167,333,,"                  "
+,"0 B 1","Selected Course #2              ","Deg     ","0-359         ",3,,1,167,333,,"                  "
+,,,,,,,,,,,
+"0 3 0","0 2 0","VHF COM Frequency               ","        ","See Chapter 3 ",,,,100,200,,06/01/45
+,"0 2 4","VHF COM Frequency               ","        ","See Chapter 3 ",,,,100,200,,"                  "
+,"0 4 D","TNK-LD SEL (KG)","Kg","0-79999",5,,1,,,,
+,"0 B 6","VHF COM Frequency               ","        ","See Chapter 3 ",,,,100,200,,"                  "
+,,,,,,,,,,,
+"0 3 1","0 2 0","Beacon Transponder Code         ","        ","See Chapter 3 ",,,,100,200,,06/01/46
+,"0 B 8","Beacon Transponder Code         ","        ","See Chapter 3 ",,,,100,200,,"                  "
+,,,,,,,,,,,
+"0 3 2","0 1 2","ADF Frequency                   ","        ","See Chapter 3 ",,,,100,200,,06/01/40
+,"0 2 0","ADF Frequency                   ","        ","See Chapter 3 ",,,,100,200,,"                  "
+,"0 B 2","ADF Frequency                   ","        ","See Chapter 3 ",,,,100,200,,"                  "
+,,,,,,,,,,,
+"0 3 3","0 0 2","ILS Frequency                   ","        ","See Chapter 3 ",,,,167,333,,06/01/44
+,"0 1 0","ILS Frequency                   ","        ","See Chapter 3 ",,,,167,333,,"                  "
+,"0 2 0","ILS Frequency                   ","        ","See Chapter 3 ",,,,167,333,,"                  "
+,"0 5 6","ILS Frequency",,"See Chapter 3 ",,,,167,333,,
+,"0 6 0","ILS Frequency",,"See Chapter 3 ",,,,167,333,,
+,"0 B 0","ILS Frequency                   ","        ","See Chapter 3 ",,,,167,333,,"                  "
+,,,,,,,,,,,
+"0 3 4","0 0 2","VOR/ILS Frequency               ","        ","See Chapter 3 ",,,,167,333,,"6-44-1"
+,"0 0 6","Baro Correction (mb) #3         ","mb      ","745-1050      ",5,,0.1,62.5,125,,"                  "
+,"0 1 1","VOR/ILS Frequency               ","        ","See Chapter 3 ",,,,167,333,,"                  "
+,"0 2 0","VOR/ILS Frequency               ","        ","See Chapter 3 ",,,,167,333,,"                  "
+,"0 5 6","VOR/ILS Frequency",,"See Chapter 3 ",,,,167,333,,
+,"0 6 0","VOR/ILS Frequency #1",,"See Chapter 3 ",,,,167,333,,
+,"0 B 0","VOR/ILS Frequency               ","        ","See Chapter 3 ",,,,167,333,,"                  "
+,,,,,,,,,,,
+"0 3 5","0 0 2","DME Frequency                   ","        ","See Chapter 3 ",,,,100,200,,06/01/41
+,"0 0 6","Baro Correction (ins of Hg) #3  ","ins Hg  ","22-31         ",5,,0.001,62.5,125,,"                  "
+,"0 0 9","DME Frequency                   ","        ","See Chapter 3 ",,,,100,200,,"                  "
+,"0 2 0","DME Frequency                   ","        ","See Chapter 3 ",,,,100,200,,"                  "
+,"0 5 5","Paired DME Frequency","MHz","108-135.9",4,,0.05,,,,
+,"0 5 6","DME Frequency",,"See Chapter 3 ",,,,100,200,,
+,"0 6 0","DME Frequency",,"See Chapter 3 ",,,,100,200,,
+,"0 A 9","DME Frequency                   ","        ","See Chapter 3 ",,,,100,200,,"                  "
+,,,,,,,,,,,
+"0 3 6","0 0 2","MLS Frequency                   ","        ","See Chapter 3 ",,,,100,200,,"                  "
+,"0 2 0","MLS Frequency                   ","        ","See Chapter 3 ",,,,100,200,,"                  "
+,"0 5 5","MLS Channel Selection",,"500-600",3,,1,,,,
+,"0 5 6","MLS Frequency Channel",,"See Chapter 3 ",,,,100,200,,
+,"0 6 0","MLS Frequency Channel",,"See Chapter 3 ",,,,100,200,,
+,"0 C 7","MLS Frequency                   ","        ","See Chapter 3 ",,,,100,200,,"                  "
+,,,,,,,,,,,
+"0 3 7","0 2 0","HF COM Frequency",,"See Chapter 3",,,,100,200,,06/01/42
+,"0 B 9","HF COM Frequency",,"See Chapter 3",,,,100,200,,
+,,,,,,,,,,,
+"0 4 1","0 0 2","Set Latitude                    ","Deg/Min ","180N/180S     ",6,"N",0.1,250,500,,"                  "
+,"0 0 4","Set Latitude                    ","Deg/Min ","180N/180S     ",6,"N",0.1,250,500,,"                  "
+,"0 2 0","Set Latitude                    ","Deg/Min ","180N/180S     ",6,"N",0.1,250,500,,"                  "
+,"0 5 6","Set Latitude","Deg/Min ","180N/180S     ",6,"N",0.1,250,500,,
+,"0 6 0","Set Latitude","Deg/Min ","180N/180S     ",6,"N",0.1,250,500,,
+,"0 A 4","Set Latitude                    ","Deg/Min ","180N/180S     ",6,"N",0.1,250,500,,"                  "
+,,,,,,,,,,,
+"0 4 2","0 0 2","Set Longitude                   ","Deg/Min ","180E/180W     ",6,"E",0.1,250,500,,"                  "
+,"0 0 4","Set Longitude                   ","Deg/Min ","180E/180W     ",6,"E",0.1,250,500,,"                  "
+,"0 2 0","Set Longitude                   ","Deg/Min ","180E/180W     ",6,"E",0.1,250,500,,"                  "
+,"0 5 6","Set Longitude","Deg/Min ","180E/180W     ",6,"E",0.1,250,500,,
+,"0 6 0","Set Longitude","Deg/Min ","180E/180W     ",6,"E",0.1,250,500,,
+,"0 A 4","Set Longitude                   ","Deg/Min ","180E/180W     ",6,"E",0.1,250,500,,"                  "
+,,,,,,,,,,,
+"0 4 3","0 0 2","Set Magnetic Heading            ","Deg     ","0-359         ",3,,1,250,500,,"                  "
+,"0 0 4","Set Magnetic Heading            ","Deg     ","0-359         ",3,,1,250,500,,"                  "
+,"0 2 0","Set Magnetic Heading            ","Deg     ","0-359         ",3,,1,250,500,,"                  "
+,"0 5 6","Set Magnetic Heading","Deg     ","0-359         ",3,,1,250,500,,
+,"0 6 0","Set Magnetic Heading","Deg     ","0-359         ",3,,1,250,500,,
+,"0 A 4","Set Magnetic Heading            ","Deg     ","0-359         ",3,,1,250,500,,"                  "
+,,,,,,,,,,,
+"0 4 4","0 0 4","True Heading                    ","Deg     ","0-359.9       ",4,,0.1,250,500,,"                  "
+,"0 3 8","True Heading                    ","Deg     ","0-359.9       ",4,,0.1,250,500,,"                  "
+,,,,,,,,,,,
+"0 4 5","0 0 3","Minimum Airspeed                ","Knots   ","0-259.9       ",4,,0.1,62.5,125,,"                  "
+,,,,,,,,,,,
+"0 4 6","0 3 3","Engine Serial No. (LSDs)        ","        ","              ",,,,500,1000,,06/15/13
+,"1 0 A","Engine Serial No. (LSDs)        ","        ","              ",,,,500,1000,,06/15/13
+,"1 0 B","Engine Serial No. (LSDs)        ","        ","              ",,,,500,1000,,06/15/13
+,,,,,,,,,,,
+"0 4 7","0 2 0","VHF Com Frequency","See Chap. 3",,,,,100,200,,
+,"0 2 4","VHF Com Frequency","See Chap. 3",,,,,100,200,,
+,"0 3 3","Engine Serial No. (MSDs)        ","        ","              ",,,,500,1000,,06/16/13
+,"1 0 A","Engine Serial No. (MSDs)        ","        ","              ",,,,500,1000,,06/16/13
+,"1 0 B","Engine Serial No. (MSDs)        ","        ","              ",,,,500,1000,,06/17/13
+,"0 B 6","VHF Com Frequency","See Chap. 3",,,,,100,200,,
+,,,,,,,,,,,
+"0 5 2","0 3 7","Long. Zero Fuel CG","% MAC","0-100.00",5,,0.01,100,200,,
+,,,,,,,,,,,
+"0 5 3","0 0 5","Track Angle-Magnetic            ","Deg     ","0-359         ",3,,1,250,500,,"                  "
+,,,,,,,,,,,
+"0 5 6","0 0 2","Estimated Time of Arrival       ","Hr:Min  ","0-23.59.9     ",5,,0.1,250,500,,"                  "
+,"0 0 5","Wind Direction - Magnetic       ","Deg     ","0-359         ",3,,1,250,500,,"                  "
+,"0 3 7","Gross Weight (Kilograms)        ","100 kg  ","0-19999       ",5,,1,100,200,,"                  "
+,"0 5 6","ETA (Active Waypoint)","Hr:Min  ","0-23.59.9     ",5,,0.1,250,500,,
+,"0 6 0","ETA (Active Waypoint)","Hr:Min  ","0-23.59.9     ",5,,0.1,250,500,,
+,,,,,,,,,,,
+"0 6 0","0 2 5","S/G Hardware Part Number",,,4,,,,,,06/01/36
+,"0 3 7","Tire Loading (Left Body Main)   ","%       ","0-299.9       ",4,,0.1,100,200,,"                  "
+,,,,,,,,,,,
+"0 6 1","0 2 5","S/G Software Config. Part No.",,,4,,,,,,06/01/37
+,"0 3 7","Tire Loading (Right Body Main)  ","%       ","0-299.9       ",4,,0.1,100,200,,"                  "
+,,,,,,,,,,,
+"0 6 2","0 3 7","Tire Loading (Left Wing Main)   ","%       ","0-299.9       ",4,,0.1,100,200,,"                  "
+,,,,,,,,,,,
+"0 6 3","0 3 7","Tire Loading (Right Wing Main)  ","%       ","0-299.9       ",4,,0.1,100,200,,"                  "
+,,,,,,,,,,,
+"0 6 4","0 3 7","Tire Loading (Nose)             ","%       ","0-299.9       ",4,,0.1,100,200,,"                  "
+,,,,,,,,,,,
+"0 6 5","0 0 3","Gross Weight                    ","100 lb. ","0-12000",5,,1,100,200,,"          "
+,"0 3 7","Gross Weight                    ","100 lb.","0-19999",5,,1,100,200,,"          "
+,,,,,,,,,,,
+"0 6 6","0 0 2","Longitudinal Center of Gravity  ","% MAC   ","0-100.00      ",5,,0.01,500,1000,,"                  "
+,"0 3 7","Longitudinal Center of Gravity  ","% MAC   ","0-100.00      ",5,,0.01,100,200,,"                  "
+,,,,,,,,,,,
+"0 6 7","0 3 7","Lateral Center of Gravity       ","% MAC   ","0-100.00      ",5,,0.01,100,200,,"                  "
+,,,,,,,,,,,
+"1 2 5","0 0 2","Universal Time Coordinate","Hr-Min","0-23.59.9",4,,0.1,100,200,,06/25/13
+,"0 0 B","UTC","Hr:Min","0-23:59.9",5,,0.1,200,1200,,
+,"0 3 1","Universal Time Coordinate","Hr:Min  ","0-23.59.9     ",5,,0.1,100,200,,"                  "
+,"0 5 6","Universal Time Coordinate","Hr-Min","0-23.59.9",4,,0.1,100,200,,
+,"0 6 0","Universal Time Coordinate (UTC)","Hr-Min","0-23.59.9",4,,0.1,100,200,,
+,,,,,,,,,,,
+"1 3 5","0 5 A","ACT 1 Fuel Quan. Display","Kg/Lb","0-9999",4,,100,100,200,,
+,,,,,,,,,,,
+"1 3 6","0 5 A","ACT 2 Fuel Quan. Display","Kg/Lb","0-9999",4,,100,100,200,,
+,,,,,,,,,,,
+"1 3 7","0 5 A","Center+Act1+Act2 FQ Display","Kg/Lb","0-9999",4,,100,100,200,,
+"
+",,,,,,,,,,,
+"1 4 0","0 5 A","Actual Fuel Quan. Display","Kg/Lb","0-9999",4,,100,100,200,,
+,,,,,,,,,,,
+"1 4 1","0 5 A","Preselect Fuel Quan. Display","Kg/Lb","0-9999",4,,100,100,200,,
+,,,,,,,,,,,
+"1 4 2","0 5 A","Left Wing Fuel Quan. Display","Kg/Lb","0-9999",4,,100,100,200,,
+,,,,,,,,,,,
+"1 4 3","0 5 A","Center Wing Fuel Quan. Display","Kg/Lb","0-9999",4,,100,100,200,,
+,,,,,,,,,,,
+"1 4 4","0 5 A","Right Wing Fuel Quan. Display","Kg/Lb","0-9999",4,,100,100,200,,
+,,,,,,,,,,,
+"1 5 5","0 2 7","MLS Selected GP Angle           ","Deg     ","0-359.9",4,,0.1,100,200,,"                  "
+,,,,,,,,,,,
+"1 5 7","1 1 4","Trim Tank Probe Capacitance","pf","0-400",4,,1,,,,
+,,,,,,,,,,,
+"1 6 3","0 3 7","Zero Fuel Weight (lb)","Lbs.","0-19999",5,,1,100,200,,
+,,,,,,,,,,,
+"1 6 5","0 0 7","Radio Height                    ","Feet    ","?7999.9      ",5,,0.1,25,200,,06/25/13
+,,,,,,,,,,,
+"1 7 0","0 2 5","Decision Height Selected (EFI)  ","Feet    ","?7000        ",4,,1,100,200,,06/25/13
+,"0 C 5","Decision Height Selected (EFI)  ","Feet    ","?7000        ",4,,1,100,200,,06/25/13
+,,,,,,,,,,,
+"2 0 0","0 0 2","Drift Angle                     ","Deg     ","?180          ",4,,0.1,100,200,,"                  "
+,"0 0 4","Drift Angle                     ","Deg     ","?180         ",4,,0.1,100,200,,"                  "
+,"0 5 6","Drift Angle","Deg     ","?180          ",4,,0.1,100,200,,
+,"0 6 0","Drift Angle","Deg     ","?180          ",4,,0.1,100,200,,
+"2 0 1","0 0 9","DME Distance                    ","N.M.    ","-1-399.99     ",5,,0.01,83.3,167,,06/01/01
+,"1 1 2","TACAN Distance","N.M.","0-399.99",5,,0.01,190,210,,
+,"1 1 5","DME Distance                           ","N.M.    ","0-399.99       ",5,,0.01,50,50,,"                  "
+,,,,,,,,,,,
+"2 0 5","0 0 2","HF COM Freq (New Format)   ","        ","              ",,,,,,,
+,"0 B 9","HF COM Freq (New Format)   ","        ","              ",,,,,,,
+,,,,,,,,,,,
+"2 0 7","0 2 5","Operational Software Parts",,,4,,,,,,06/01/37
+,,,,,,,,,,,
+"2 3 0","0 0 6","True Airspeed                   ","Knots   ","100-599       ",3,,1,250,500,,06/25/13
+,"0 3 8","True Airspeed                   ","Knots   ","100-599       ",3,,1,250,500,,"                  "
+,,,,,,,,,,,
+"2 3 1","0 0 6","Total Air Temperature           ","Deg C   ","-060+099     ",3,,1,250,500,,"                  "
+,"0 3 8","Total Air Temperature           ","Deg C   ","-060+099     ",3,,1,250,500,,"                  "
+,"1 1 4","Inner 2 Tank Probe Capacitance","pf","0-400",4,,1,,,,
+,,,,,,,,,,,
+"2 3 2","0 0 4","Altitude Rate                   ","Ft/Min  ","?20000",4,"Up",10,31.3,62.5,,06/25/13
+,"0 0 5","Altitude Rate                   ","Ft/Min  ","?20000",4,"Up",10,31.3,62.5,,"          "
+,"0 0 6","Altitude Rate                   ","Ft/Min  ","?20000",4,"Up",10,31.3,62.5,,"          "
+,"1 1 4","Inner 4 Tank Probe Capacitance","pf","0-400",4,,1,,,,
+,,,,,,,,,,,
+"2 3 3","0 0 6","Static Air Temperature          ","Deg C   ","-099 to +060    ",3,,1,250,500,,06/25/13
+,"0 3 8","Static Air Temperature          ","Deg C   ","-099 to +060   ",3,,1,250,500,,"                  "
+,"1 1 4","Right Outer Probe Capacitance","pf","0-400",4,,1,,,,
+,,,,,,,,,,,
+"2 3 4","0 0 6","Baro Correction (mb) #1         ","mb      ","745-1050      ",5,,0.1,62.5,125,,"                  "
+,"0 3 8","Baro Correction (mb) #1         ","mb      ","745-1050      ",5,,0.1,62.5,125,,"                  "
+,,,,,,,,,,,
+"2 3 5","0 0 6","Baro Correction (ins of Hg) #1  ","ins Hg  ","22-31         ",5,,0.001,62.5,125,,06/25/13
+,"0 3 8","Baro Correction (ins of Hg) #1  ","ins Hg  ","22-31         ",5,,0.001,62.5,125,,06/25/13
+,,,,,,,,,,,
+"2 3 6","0 0 6","Baro Correction (mb) #2         ","mb      ","745-1050      ",5,,0.1,62.5,125,,"                  "
+,"0 3 8","Baro Correction (mb) #2         ","mb      ","745-1050      ",5,,0.1,62.5,125,,"                  "
+,,,,,,,,,,,
+"2 3 7","0 0 6","Baro Correction (ins of Hg) #2  ","ins Hg  ","22-31         ",5,,0.001,62.5,125,,"                  "
+,"0 3 8","Baro Correction (ins of Hg) #2  ","ins Hg  ","22-31         ",5,,0.001,62.5,125,,"                  "
+,,,,,,,,,,,
+"2 4 3","0 3 7","Zero Fuel Weight (kg)","Kg","0-19999",5,,1,100,200,,
+,,,,,,,,,,,
+"2 6 0","0 0 2","Date/Flight Leg                 ","N/A     ","              ",,,,500,1000,,"                  "
+,"0 0 B","Date","dd:mo:yr","dd:mm:yr",6,,4,,,,
+,"0 3 1","Date","N/A     ","              ",,,,100,200,,06/18/13
+,"0 5 6","Date/Flight Leg","N/A     ","              ",,,,500,1000,,
+,"0 6 0","Date/Flight Leg","N/A     ","              ",,,,500,1000,,
+,"0 A 2","Date/Flight Leg                 ","N/A     ","              ",,,,500,1000,,"                  "
+,,,,,,,,,,,
+"2 6 1","0 0 2","Flight Number                   ","N/A     ","0-9999        ",4,,1,500,1000,,06/09/13
+,"0 A 2","Flight Number                   ","N/A     ","0-9999        ",4,,1,500,1000,,"                  "
+,"0 5 6","Flight Number                   ","N/A     ","0-9999        ",4,,1,500,1000,,
+,"0 6 0","Flight Number                   ","N/A     ","0-9999        ",4,,1,500,1000,,
+,,,,,,,,,,,
+"2 7 2","0 5 A","Fuel Density","Kg/cu.m.","0-9999",4,,0.0001,100,200,,"ARINC 429 P2"
+,,,,,,,,,,,
+"2 7 3","0 5 A","Sensor Values Left Wing Tank","pF","0-100",3,,100,200,,,
+,,,,,,,,,,,
+"2 7 4","0 5 A","Sensor Values Center Wing Tank","pF","0-100",3,,0.1,100,200,,
+,,,,,,,,,,,
+"2 7 5","0 5 A","Sensor Values Right Wing Tank","pF","0-100",3,,0.1,100,200,,
+,,,,,,,,,,,
+"3 4 5","0 0 2","NDB Effectivity                 ","        ","              ",,,,,1000,,
+,,,,,,,,,,,
+"3 5 0","1 1 4","Fuel Density","kg/l","0-.999",4,,0.01,,,,"ARINC 429 P2"
+,,,,,,,,,,,
+"3 5 1","1 1 4","Inner Tank 1 Probe Capacitance","pf","0-400",3,,0.1,,,,"ARINC 429 P2"
+,,,,,,,,,,,
+"3 5 2","1 1 4","Center, ACT &RCT Probe Capac.","pf","0-400",3,,0.1,,,,"ARINC 429 P2"
+,,,,,,,,,,,
+"3 5 3","1 1 4","Inner Tank 3 Probe Capacitance","pf","0-400",3,,0.1,,,,"ARINC 429 P2"
