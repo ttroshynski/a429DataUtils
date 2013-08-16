@@ -23,6 +23,7 @@
 #include <vector>
 #include <list>
 #include <cstdio>
+#include <cstring>
 #include <cstdlib>
 
 #include <Owl429/ArincUtil>
@@ -41,6 +42,7 @@
 #include <Owl429/SmartPtr>
 #include <Owl429/TxRateOrientedConfig>
 #include <Owl429/TxScheduledLabelConfig>
+#include <Owl429Utils/Xml429.hpp>
 
 // All OWL objects are in the Owl429 namespace
 using namespace Owl429;
@@ -82,6 +84,14 @@ public:
 		 */
 		std::string minTransitInterval;
 		/**
+		 * @brief The value at which to set the rate in FSIM. Derived from minTransitInterval
+		 */
+		double rate;
+		/**
+		 * @brief Defines the units of the rate. ms or Hz
+		 */
+		bool isPeriod;
+		/**
 		 * @brief The maximum Transit Interval of the data
 		 */
 		std::string maxTransitInterval;
@@ -120,6 +130,14 @@ public:
 		 * @brief The minimum Transit Interval of the data
 		 */
 		std::string minTransitInterval;
+		/**
+		 * @brief The value at which to set the rate in FSIM. Derived from minTransitInterval
+		 */
+		double rate;
+		/**
+		 * @brief Defines the units of the rate. ms or Hz
+		 */
+		bool isPeriod;
 		/**
 		 * @brief The maximum Transit Interval of the data
 		 */
@@ -579,6 +597,22 @@ public:
 			readField( line, &charPointer, field );	//Read in the min transit interval
 			bnr.minTransitInterval.assign(field);
 
+			bnr.rate = 0;
+			bnr.isPeriod = true;
+
+			bnr.rate = strtod( field, NULL );
+			if( bnr.rate == 0 )
+			{
+				//The rate is unknown. Skip this bnr
+				continue;
+			}
+			bnr.isPeriod = strstr(field, "Hz") == NULL;	//Check if it's in Hz
+			if( strstr( field, "." ) != NULL && bnr.isPeriod == true )	//Check if it's a period with a decimal point
+			{
+				bnr.rate = 1000 / bnr.rate;	//Convert to Hz
+				bnr.isPeriod = false;
+			}
+
 			readField( line, &charPointer, field );	//Read in the max transit interval
 			bnr.maxTransitInterval.assign(field);
 
@@ -743,6 +777,22 @@ public:
 			readField( line, &charPointer, field );	//Read in the min transit interval
 			bcd.minTransitInterval.assign(field);
 
+			bcd.rate = 0;
+			bcd.isPeriod = true;
+
+			bcd.rate = strtod( field, NULL );
+			if( bcd.rate == 0 )
+			{
+				//The rate is unknown. Skip this bnr
+				continue;
+			}
+			bcd.isPeriod = strstr( field, "Hz") == NULL;	//Check if it's in Hz
+			if( strstr( field, "." ) != NULL && bcd.isPeriod == true )	//Check if it's a period with a decimal point
+			{
+				bcd.rate = 1000 / bcd.rate;	//Convert to Hz
+				bcd.isPeriod = false;
+			}
+
 			readField( line, &charPointer, field );	//Read in the max transit interval
 			bcd.maxTransitInterval.assign(field);
 
@@ -778,6 +828,67 @@ public:
 		}
 
 		fclose(pFile);
+	}
+
+	/**
+	 * A function to convert a LoadedCSV to Owl429 objects and dump them to Xml
+	 */
+	void save()
+	{
+		for( std::list<Equipment>::iterator it = this->equipmentList.begin(); it != this->equipmentList.end(); ++it)
+		{
+			TxRateOrientedConfig txRateOrientedConfig = TxRateOrientedConfig();
+			RxChronMonConfig rxChronMonConfig = RxChronMonConfig();
+			LabelBufferConfig labelBufferConfig = LabelBufferConfig(1);
+			//Set the Channel Name
+			txRateOrientedConfig.setName(it->type);
+			//Add the Transfers
+			for( std::list<Transmission*>::iterator it2 = it->transmissions.begin(); it2 != it->transmissions.end(); ++it2)
+			{
+				TxScheduledLabelConfig txScheduledLabelConfig = Owl429::TxScheduledLabelConfig((OwUInt8)(*it2)->codeNo);
+				//Set the transfer name
+				txScheduledLabelConfig.setName((*it2)->parameter);
+				//Set some of the other values
+				if( (*it2)->bcd && (*it2)->bcdData != NULL )
+				{
+					//Set the Rate
+					if( (*it2)->bcdData->isPeriod )
+					{
+						txScheduledLabelConfig.setTransferPeriod( (OwUInt32)(*it2)->bcdData->rate );
+					}
+					else
+					{
+						txScheduledLabelConfig.setTransferRate( (*it2)->bcdData->rate );
+					}
+				}
+				else if( (*it2)->bnr && (*it2)->bnrData != NULL )
+				{
+					//Set the Rate
+					if( (*it2)->bnrData->isPeriod )
+					{
+						txScheduledLabelConfig.setTransferPeriod( (OwUInt32)(*it2)->bnrData->rate );
+					}
+					else
+					{
+						txScheduledLabelConfig.setTransferRate( (*it2)->bnrData->rate );
+					}
+				}
+				else
+				{
+					//Unknown data type
+					continue;
+				}
+				//Add the Transfer
+				txRateOrientedConfig.addTransfer(txScheduledLabelConfig);
+				rxChronMonConfig.addLabelBufferConfig((OwUInt8)((*it2)->codeNo), labelBufferConfig, (*it2)->parameter);
+			}
+			txRateOrientedConfig.setMonitorConfig(rxChronMonConfig);
+			//save to xml
+			std::string xmlFileName;
+
+			//Owl429Utils::Xml429::save( txRateOriented, 1, xmlFileName);
+		}
+		return;
 	}
 
 private:
@@ -845,5 +956,6 @@ int sample_LoadedCSV()
 	loadedCsv.loadTransmissionList("C:\\Users\\Evan\\Downloads\\ARINC429P1-18-LabelIDs.csv");
 	loadedCsv.loadBnrData("C:\\Users\\Evan\\Downloads\\ARINC429P1-18-BnrData.csv");
 	loadedCsv.loadBcdData("C:\\Users\\Evan\\Downloads\\ARINC429P1-18-BcdData.csv");
+	loadedCsv.save();
 	return 0;
 }
