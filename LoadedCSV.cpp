@@ -25,6 +25,8 @@
 #include <cstdio>
 #include <cstring>
 #include <cstdlib>
+#include <sstream>
+#include <algorithm>
 
 #include <Owl429/ArincUtil>
 #include <Owl429/BoardConfig>
@@ -569,6 +571,7 @@ public:
 				if( strcmp(idString, "XXX") == 0 || strcmp(idString, "YYY") == 0)
 				{
 					wildcard = true;
+					continue;	//Skip the wildcard ones. I'll leave the code that deals with them in though.
 				}
 				else
 				{
@@ -749,6 +752,7 @@ public:
 				if( strcmp(idString, "XXX") == 0 || strcmp(idString, "YYY") == 0)
 				{
 					wildcard = true;
+					continue;	//Skip the wildcard ones. I'll leave the code that deals with them in though.
 				}
 				else
 				{
@@ -837,6 +841,7 @@ public:
 	{
 		for( std::list<Equipment>::iterator it = this->equipmentList.begin(); it != this->equipmentList.end(); ++it)
 		{
+			Owl429Utils::Xml429 xml429 = Owl429Utils::Xml429::Xml429( "C:\\Program Files (x86)\\AIT\\ARINC-429 SDK v3.13.1\\C++ API\\xmlSchema\\AIT_429.xsd" );
 			TxRateOrientedConfig txRateOrientedConfig = TxRateOrientedConfig();
 			RxChronMonConfig rxChronMonConfig = RxChronMonConfig();
 			LabelBufferConfig labelBufferConfig = LabelBufferConfig(1);
@@ -846,8 +851,9 @@ public:
 			for( std::list<Transmission*>::iterator it2 = it->transmissions.begin(); it2 != it->transmissions.end(); ++it2)
 			{
 				TxScheduledLabelConfig txScheduledLabelConfig = Owl429::TxScheduledLabelConfig((OwUInt8)(*it2)->codeNo);
-				//Set the transfer name
-				txScheduledLabelConfig.setName((*it2)->parameter);
+				//Set the transfer name. This may need to be updated later.
+				std::string name = (*it2)->parameter;
+				txScheduledLabelConfig.setName(name);
 				//Set some of the other values
 				if( (*it2)->bcd && (*it2)->bcdData != NULL )
 				{
@@ -879,14 +885,33 @@ public:
 					continue;
 				}
 				//Add the Transfer
-				txRateOrientedConfig.addTransfer(txScheduledLabelConfig);
-				rxChronMonConfig.addLabelBufferConfig((OwUInt8)((*it2)->codeNo), labelBufferConfig, (*it2)->parameter);
+				try{
+					txRateOrientedConfig.addTransfer(txScheduledLabelConfig);
+				} catch ( std::invalid_argument err ){	//If the name is the same
+					//Change the name
+					std::stringstream newName;
+					newName << (*it2)->parameter << " (" << (*it2)->codeNo << ")";
+					name = newName.str();	//Update the name
+					txScheduledLabelConfig.setName( name );
+					//Retry
+					txRateOrientedConfig.addTransfer(txScheduledLabelConfig);
+				}
+				try{
+					rxChronMonConfig.addLabelBufferConfig((OwUInt8)((*it2)->codeNo), labelBufferConfig, name);
+				} catch ( std::invalid_argument err ){
+					printf( "Error: %s\n", err.what() );
+					continue;
+				}
 			}
 			txRateOrientedConfig.setMonitorConfig(rxChronMonConfig);
 			//save to xml
-			std::string xmlFileName;
+			//TODO: create the file name
+			std::stringstream xmlFileName;
+			std::string equipmentNameString = std::string(it->type);
+			std::replace( equipmentNameString.begin(), equipmentNameString.end(), ' ', '-' );	//Replace all the whitespace
+			xmlFileName << std::hex << it->id << "-" << equipmentNameString;
 
-			//Owl429Utils::Xml429::save( txRateOriented, 1, xmlFileName);
+			//xml429.save( txRateOrientedConfig, 1, xmlFileName.str());
 		}
 		return;
 	}
