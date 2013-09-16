@@ -841,7 +841,7 @@ public:
 	{
 		for( std::list<Equipment>::iterator it = this->equipmentList.begin(); it != this->equipmentList.end(); ++it)
 		{
-			Owl429Utils::Xml429 xml429 = Owl429Utils::Xml429::Xml429( "C:\\Program Files (x86)\\AIT\\ARINC-429 SDK v3.13.1\\C++ API\\xmlSchema\\AIT_429.xsd" );
+			//Owl429Utils::Xml429 xml429 = Owl429Utils::Xml429::Xml429( "C:\\Program Files (x86)\\AIT\\ARINC-429 SDK v3.13.1\\C++ API\\xmlSchema\\AIT_429.xsd" );
 			TxRateOrientedConfig txRateOrientedConfig = TxRateOrientedConfig();
 			RxChronMonConfig rxChronMonConfig = RxChronMonConfig();
 			LabelBufferConfig labelBufferConfig = LabelBufferConfig(1);
@@ -881,7 +881,9 @@ public:
 				}
 				else
 				{
-					//Unknown data type
+					//Unknown data type. (It says there is bcd/bnr data, but there isn't)
+					//This can occur when there's a typo in the csv file,
+					//like for HF COM Frequency, whose equipment id doesn't match between the Label Ids and BCD data sheets.
 					continue;
 				}
 				//Add the Transfer
@@ -904,13 +906,16 @@ public:
 				}
 			}
 			txRateOrientedConfig.setMonitorConfig(rxChronMonConfig);
-			//save to xml
-			//TODO: create the file name
+
+			//Figure out the filename
 			std::stringstream xmlFileName;
 			std::string equipmentNameString = std::string(it->type);
 			std::replace( equipmentNameString.begin(), equipmentNameString.end(), ' ', '-' );	//Replace all the whitespace
-			xmlFileName << std::hex << it->id << "-" << equipmentNameString;
+			char hexId[4] = "000";
+			sprintf(hexId, "%.3X", it->id);	//Convert the id to hex and pad it with zeros
+			xmlFileName << hexId << "-" << equipmentNameString;
 
+			//Save to xml
 			//xml429.save( txRateOrientedConfig, 1, xmlFileName.str());
 		}
 		return;
