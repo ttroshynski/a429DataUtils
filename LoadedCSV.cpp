@@ -841,6 +841,7 @@ public:
 	{
 		for( std::list<Equipment>::iterator it = this->equipmentList.begin(); it != this->equipmentList.end(); ++it)
 		{
+			Owl429Utils::Xml429 xml429( "C:\\Program Files (x86)\\AIT\\ARINC-429 SDK v3.13.1\\C++ API\\xmlSchema\\AIT_429.xsd" );
 			//Owl429Utils::Xml429 xml429 = Owl429Utils::Xml429::Xml429( "C:\\Program Files (x86)\\AIT\\ARINC-429 SDK v3.13.1\\C++ API\\xmlSchema\\AIT_429.xsd" );
 			TxRateOrientedConfig txRateOrientedConfig = TxRateOrientedConfig();
 			RxChronMonConfig rxChronMonConfig = RxChronMonConfig();
@@ -916,7 +917,7 @@ public:
 			xmlFileName << hexId << "-" << equipmentNameString;
 
 			//Save to xml
-			//xml429.save( txRateOrientedConfig, 1, xmlFileName.str());
+			xml429.save( txRateOrientedConfig, 1, xmlFileName.str());
 		}
 		return;
 	}

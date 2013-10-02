@@ -26,7 +26,7 @@
 			<Tool
 				Name="VCPreBuildEventTool"
 				Description="Copying DLLs"
-				CommandLine="copy /Y &quot;C:\Program Files\AIT\ARINC-429 SDK v3.13.1\C++ API\lib\win\vs2008sp1\*&quot; &quot;$(OutDir)&quot;&#x0D;&#x0A;"
+				CommandLine="copy /Y &quot;C:\Program Files\AIT\ARINC-429 SDK v4.6.0\C++ API\lib\win\vs2008sp1\*&quot; &quot;$(OutDir)&quot;&#x0D;&#x0A;"
 				ExcludedFromBuild="false"
 			/>
 			<Tool
@@ -44,7 +44,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;C:\Program Files\AIT\ARINC-429 SDK v3.13.1\C++ API\include&quot;"
+				AdditionalIncludeDirectories="&quot;C:\Program Files\AIT\ARINC-429 SDK v4.6.0\C++ API\include&quot;"
 				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -65,7 +65,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="&quot;C:\program files\ait\ARINC-429 SDK v3.13.1\C++ API\lib\win\vs2008sp1\owl429d.lib&quot; &quot;C:\program files\ait\ARINC-429 SDK v3.13.1\C++ API\lib\win\vs2008sp1\owl429utilsd.lib&quot;"
+				AdditionalDependencies="&quot;C:\program files\ait\ARINC-429 SDK v4.6.0\C++ API\lib\win\vs2008sp1\owl429d.lib&quot; &quot;C:\program files\ait\ARINC-429 SDK v4.6.0\C++ API\lib\win\vs2008sp1\owl429utilsd.lib&quot;"
 				LinkIncremental="2"
 				GenerateDebugInformation="true"
 				SubSystem="1"
